@@ -50,7 +50,7 @@ function Login({ providers }) {
         }}
       >
         <a
-          href="https://github.com/Ajay-056/Whatsapp-Clone-NextJS"
+          href="https://github.com/Ajay-056/Spotify-Clone-NextJS-12"
           target="_blank noreferrer"
         >
           <Image src="/icons8-github.svg" alt="github" height={40} width={40} />
