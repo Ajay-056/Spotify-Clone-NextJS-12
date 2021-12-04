@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { playlistIdState, playlistState } from '../atoms/playlistAtom';
 import useSpotify from '../hooks/useSpotify';
+import Songs from './Songs';
 
 const colors = [
   'from-indigo-500',
@@ -39,7 +40,7 @@ function Center() {
   return (
     <div className="flex-grow">
       <header className="absolute top-5 right-8">
-        <div className="flex items-center bg-[#44080f] space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full pr-2">
+        <div className="flex items-center bg-[#2e2e2e] space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full pr-2">
           <img
             className="rounded-full w-10 p-1 h-10"
             src={session?.user.image}
@@ -62,6 +63,10 @@ function Center() {
           <h1 className="text-2xl md:text-3xl xl:text-5xl">{playlist?.name}</h1>
         </div>
       </section>
+
+      <div>
+        <Songs />
+      </div>
     </div>
   );
 }
